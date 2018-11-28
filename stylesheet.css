@@ -1,0 +1,42 @@
+nav {
+    color: black;
+    text-align: center;
+    font-family: 'Courier';
+    margin-top: 10pt;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    background: black;
+    color: white;
+    font-family: 'Courier';
+    font-size: 50pt;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    font-family: 'Courier'
+} 
+
+p {
+    color: black;
+    font-family: 'Courier'
+}
+
+.footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Courier';
+            padding-top: 10pt;
+            padding-bottom: 10pt;
+}
