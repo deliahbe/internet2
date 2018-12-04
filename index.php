@@ -1,7 +1,17 @@
 <?php 
     $text = $_REQUEST['Unfug1'] . " " . $_REQUEST['Unfug2'] . " " . $_REQUEST['Unfug3'] . "\n";
     file_put_contents("formular.txt", $text, FILE_APPEND);
+// Falls das Textfeld nicht ausgefüllt wurde
+    if (empty($_GET['Textfeld'])){
+        die("Fehler! Kein Text eingegeben.");
+        }
+    // Falls das Textfeld ausgefüllt wurde
+    else {
+        // Inhalt des Textfelds in Datei schreiben
+        file_put_contents("formular.txt", $_GET['Textfeld'], FILE_APPEND);               
+        }  
 ?>
+
 
 <!DOCTYPE HTML>
 <html>
@@ -55,11 +65,6 @@
     echo $_GET['Textfeld'];
     ?>
 </p>
-
-<?php
-    if (empty($_GET['Textfeld'])
-    die("Fehler! Kein Text übertragen.");
-?>
     
 <?php 
     include('footer.inc');
